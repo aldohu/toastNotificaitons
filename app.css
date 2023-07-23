@@ -1,0 +1,32 @@
+:root {
+	--bottom: 0px;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: palevioletred;
+	position: relative;
+}
+.show-notifications,
+.notification {
+	color: palevioletred;
+	border-radius: 5px;
+	box-shadow: 2px 2px palevioletred;
+	padding: 15px;
+}
+.notification {
+	position: absolute;
+	bottom: var(--bottom);
+
+	right: 0;
+	border: 2px solid blue;
+	text-transform: uppercase;
+}
